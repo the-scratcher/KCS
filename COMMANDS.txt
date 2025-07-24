@@ -1,0 +1,30 @@
+When it says store to, it takes from the bus
+When it says read, it reads to the bus
+Any result of an alu has the registers used
+1 SRA store to register a
+2 SRB store to register b
+3 SAA store to alu-3 register a
+4 SAB store to alu-3 register b
+5 RAU read alu sum
+6 RRM read current address of ram
+7 SAD store to ram address register
+8 STR store to current address of ram
+9 RRA read register a
+10 RRB read register b
+11 RDF read alu difference
+12 
+13 SRC store to jump address of cpu
+14 JMP jump to jump address
+15 CLEAR CODE runs at start to remove errors
+16 BMP adds 1 to alu-0 register and outputs sum
+17 BMM subs 1 from alu-0 register and outputs difference
+18 SBM stores to alu-0 register
+19 CNG flips on conditional switch if bus is negative
+20 CPS ditto but positive
+21 CZR ditto but equals zero
+22 NIL reads nil
+23
+24 CPU reads 8 bit number from 0, the output b of the rom
+25 SCR stores to register c
+26 RRC reads from register c
+27 CLC resets conditional toggle
