@@ -13,7 +13,7 @@ Any result of an alu has the registers used
 10 RRB read register b
 11 RDF read alu difference
 12 
-13 SRC store to jump address of cpu
+13 
 14 JMP jump to jump address
 15 CLEAR CODE runs at start to remove errors
 16 BMP adds 1 to alu-0 register and outputs sum
@@ -24,7 +24,10 @@ Any result of an alu has the registers used
 21 CZR ditto but equals zero
 22 NIL reads nil
 23
-24 CPU reads 8 bit number from 0, the output b of the rom
+24 CPU reads 8 bit number to cpu register
 25 SCR stores to register c
 26 RRC reads from register c
-27 CLC resets conditional toggle
+27 CLC resets conditi7cponal toggle
+28 RCP reads cpu value
+add 32 if conditional
+jmp and cpu require a 8 bit number, but first multiply by 256 and add to the command
