@@ -12,8 +12,8 @@ Any result of an alu has the registers used
 9 RRA read register a
 10 RRB read register b
 11 RDF read alu difference
-12 
-13 
+12 RIN read inbox
+13 CLB clears busaaaaaaa
 14 JMP jump to jump address
 15 CLEAR CODE runs at start to remove errors
 16 BMP adds 1 to alu-0 register and outputs sum
@@ -22,12 +22,14 @@ Any result of an alu has the registers used
 19 CNG flips on conditional switch if bus is negative
 20 CPS ditto but positive
 21 CZR ditto but equals zero
-22 NIL reads nil
-23
+22 NIL reads nil18
+23 OUT sends to outbox
 24 CPU reads 8 bit number to cpu register
 25 SCR stores to register c
 26 RRC reads from register c
 27 CLC resets conditi7cponal toggle
 28 RCP reads cpu value
+31 END 
 add 32 if conditional
 jmp and cpu require a 8 bit number, but first multiply by 256 and add to the command
+CONVERT TO BINARY
